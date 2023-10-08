@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Content Management Tool</title>
+  <link rel="stylesheet" type="text/css" href="contentmanagement.css" media="screen" />
+  <script src="contentmanagement.js"></script>
+  
+  
+</head>
+
+<body>
+  <h1>BLOG</h1>
+  <div class="card" style="height:12cm; width: 15cm;">
+    
+    <div class="input-section">
+      <b><label class="label-section" for="title">TITLE:</label></b>
+      <input class="div-section" cols="50" type="text" id="title" placeholder="ENTER TITLE" required></input>
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="content">TEXT:</label></b>
+      <input class="div-section" cols="100" type="text" id="content" placeholder="ENTER TEXT" required></input>
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="image">IMAGE:</label></b>
+      <input type="file" id="image" accept="image/*">
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="video">VIDEO:</label></b>
+      <input type="file" id="video" accept="video/*">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div style="text-align: center;">
+    <button onclick="submitForm()">SUBMIT</button>
+  </div>
+  
+  
+  <div class="data-container">
+    <div class="data-section" id="dataSection">
+    </div>
+  </div>
+</body>
+
+</html>
